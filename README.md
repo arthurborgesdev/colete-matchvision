@@ -1,24 +1,65 @@
-# colete-matchvision (Colete eletrônico para treinar jogadores de futebol)
-
-## Pra que serve?
-
-Para ser utilizada em treinos de futebol com o objetivo de melhorar a acuidade visual dos jogadores.
+# colete-matchvision (Electronic jacket for trainning soccer players)
 
 
-## Como funciona?
+## What it is for?
 
-O equipamento consiste em um ESP8266 conectado a uma bateria de lítio e a fitas LED modelo WS2812b. Essas fitas tem a característica de os LEDs poderem ser controlados individualmente. Assim, foi possível construir um display de 7 segmentos que cobrisse todo o peitoral do jogador.
-
-De acordo com a pesquisa do médico que encomendou o desenvolvimento, ao mudar o padrão escrito na camisa isso força os jogadores a não olharem para a bola e sim para a camisa dos seus companheiros, melhorando assim seu desempenho.
-
-O dispositivo é programado para de tempos em tempos alternar os números do colete. Ao receber a bola os jogadores deveriam dizer o número da camisa de seus companheiros e ao chutar também. Esse exercício os forçam a sempre olhar pra frente, e não para o chão.
+To be used in soccer trainings with the purpose of improving players' visual acuity
 
 
-## Arquivos principais e suas funções
+## How it works?
+
+The equipment consists in an ESP8266 connected to a Lithium battery and LED strips of model WS2812b. These strips have a feature that LEDs can be controlled individually. Then, it was possible to build 7 segment displays to cover the whole breastplate of the soccer player.
+
+Accordingly to the doctor's research who requested the development of the prototype, when you change the pattern in the players' t-shirt, you force the players to not look to the ball (forcing them to look at heir colleagues t-shirts), then, improving their performance.
+
+The device is programmed to alternate the numbers in the jacket from time to time. As part of the training exercise, the players should have to tell the number in their colleagues jackets when they received the ball pass and also when they kicked it. This forced them to look always to the front, and not to the ground.
+
+
+## MAin files and its functionalities
 
 **/espColorWebServerWs2812b-mod.ino**
 
-Esse arquivo único é compilado e transferido para o ESP8266. Nele contém a importação das bibliotecas que foram utilizadas, como por exemplo a de controle dos LEDs como a de controle do Wifi da placa. Contém também a definição das variáveis e da webpage que roda em um servidor na placa.
+This unique file is compiled and transfered to the ESP8266. It contains the import of libraries, like, for example, the one to control the LEDs and the one to control the Wifi of the board. It also contains the definition of variables and the webpage that runs in a webserver in the board, allowing to customize the patterns in the jacket through a web broweser.
 
-Contém as funções para gravar dados na EEPROM e de atualizar o tempo atual. Por fim contém as funções principais, setup() e loop().
+It contains the function to store data in the EEPROM and set up the time. Then it contains the main functions: setup() and loop().
 
+## Built With
+
+- ESP8266
+- WS2812b LED strips
+- Arduino C/C++
+- VSCode
+- Ubuntu 20.04.3
+
+
+## Setup
+
+- Get the link of the repository: `git@github.com:arthurborgesdev/colete-matchvision.git`
+- Clone it as `git@github.com:arthurborgesdev/colete-matchvision.git` on a Terminal
+
+## Usage
+
+- This project runs on physical devices that does not exist anymore. But the codebase is a reference for future Arduino embedded projects.
+
+
+## Author
+
+👤 **Arthur Borges**
+
+- GitHub: [@arthuborgesdev](https://github.com/arthurborgesdev)
+- Twitter: [@arthurmoises](https://twitter.com/arthurmoises)
+- LinkedIn: [Arthur Borges](https://linkedin.com/in/arthurmoises)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- RYD Engenharia and all the people related
+- Lots and lots of Stack Overflow questions and answers
